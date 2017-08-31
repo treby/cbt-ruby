@@ -1,10 +1,8 @@
 require 'cbt/client/screenshots'
-require 'cbt/client/screenshot_comparisons'
 
 module Cbt
   class Client
     include Cbt::Client::Screenshots
-    include Cbt::Client::ScreenshotComparisons
 
     def initialize(user:, pass:)
       @user = user

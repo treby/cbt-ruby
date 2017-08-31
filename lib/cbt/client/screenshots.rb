@@ -2,6 +2,7 @@ require 'cbt/client/screenshots/browsers'
 require 'cbt/client/screenshots/browser_lists'
 require 'cbt/client/screenshots/login_profiles'
 require 'cbt/client/screenshots/selenium_scripts'
+require 'cbt/client/screenshots/comparisons'
 
 module Cbt
   class Client
@@ -10,6 +11,7 @@ module Cbt
       include Cbt::Client::Screenshots::BrowserLists
       include Cbt::Client::Screenshots::LoginProfiles
       include Cbt::Client::Screenshots::SeleniumScripts
+      include Cbt::Client::Screenshots::Comparisons
 
       # List Screenshot History
       #
