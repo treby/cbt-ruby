@@ -2,12 +2,20 @@
 
 A crossbrowsertesting wrapper for ruby. Now, we support only screenshot API.
 
+From [Crossbrowsertesting.com API Overview](https://crossbrowsertesting.com/apidocs/v3/)
+
+- :no_good_woman: [Live Tests](https://crossbrowsertesting.com/apidocs/v3/livetests.html)
+- :no_good_woman: [Selenium Tests](https://crossbrowsertesting.com/apidocs/v3/selenium.html)
+- :ok_woman: [Screenshots](https://crossbrowsertesting.com/apidocs/v3/screenshots.html)
+- :ok_woman: [Screenshot Comparisons](https://crossbrowsertesting.com/apidocs/v3/screenshot-comparisons.html)
+- :no_good_woman: [Local Connections](https://crossbrowsertesting.com/apidocs/v3/tunnels.html)
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cbt-ruby'
+gem 'cbt', github: 'treby/cbt-ruby'
 ```
 
 And then execute:
@@ -20,7 +28,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'cbt'
+
+client = Cbt::Client.new(user: '<Your username>', pass: '<Your password>')
+
+# Get screenshot history
+# https://crossbrowsertesting.com/apidocs/v3/screenshots.html#!/default/get_screenshots
+client.screenshots
+
+# You can specify parameters
+client.screenshots(archived: false)
+```
+
+**Notice** : This gem returns raw [Faraday](https://github.com/lostisland/faraday)'s response (`Faraday::Response`) and response body will be handled by [`FaradayMiddleware::ParseJson`](https://github.com/lostisland/faraday_middleware).
 
 ## Development
 
