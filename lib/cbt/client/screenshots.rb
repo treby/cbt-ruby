@@ -38,7 +38,7 @@ module Cbt
       #
       # @see https://crossbrowsertesting.com/apidocs/v3/screenshots.html#!/default/put_screenshots_screenshot_test_id
       def archive_screenshot(screenshot_test_id, params = {})
-        connection.put("screenshots/#{screenshot_test_id}", params)
+        connection.put("screenshots/#{screenshot_test_id}", params.merge(action: 'archive', archived: 'true'))
       end
 
       # List Screenshot Test Versions
