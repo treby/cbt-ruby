@@ -5,5 +5,4 @@ require "cbt/version"
 require "cbt/client"
 
 module Cbt
-  # Your code goes here...
 end
