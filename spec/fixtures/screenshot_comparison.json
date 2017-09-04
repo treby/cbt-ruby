@@ -1,0 +1,31 @@
+[
+  {
+    "base": {
+      "screenshot": {
+        "screenshot_id": 0
+      }
+    },
+    "target": {
+      "screenshot": {
+        "screenshot_id": 0
+      },
+      "comparison": {
+        "error": true,
+        "message": "string",
+        "tolerance": 0,
+        "elements": [
+          {
+            "full_path": "string",
+            "short_path": "string",
+            "difference": "string",
+            "show_difference_web_url": "string",
+            "show_difference_public_url": "string"
+          }
+        ],
+        "differences": 0,
+        "show_comparisons_web_url": "string",
+        "show_comparisons_public_url": "string"
+      }
+    }
+  }
+]

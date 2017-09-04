@@ -12,7 +12,7 @@ module Cbt
     private
 
     def connection
-      @conn ||= Faraday.new(url: 'https://crossbrowsertesting.com/api/v3/') do |faraday|
+      @conn ||= Faraday.new(url: Cbt.api_endpoint) do |faraday|
         faraday.request :json
         faraday.response :raise_error
         faraday.response :json, content_type: 'application/json'

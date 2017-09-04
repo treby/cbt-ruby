@@ -1,4 +1,6 @@
 require 'cbt'
+require 'rspec'
+require 'webmock/rspec'
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
@@ -20,4 +22,21 @@ RSpec.configure do |config|
   config.profile_examples = 10
   config.order = :random
   Kernel.srand config.seed
+end
+
+def json_response(file)
+  {
+    body: fixture(file),
+    headers: {
+      content_type: 'application/json; charset=utf-8'
+    }
+  }
+end
+
+def fixture(file)
+  File.new(File.expand_path("../fixtures/#{file}", __FILE__))
+end
+
+def cbt_url(path)
+  "#{Cbt.api_endpoint}#{path}"
 end

@@ -1,0 +1,122 @@
+{
+  "screenshot_test_id": 1234567,
+  "url": "https://app.repro.io/apps/1234567/start_guide",
+  "created_date": "2017-09-04T04:37:46.000Z",
+  "archived": false,
+  "version_count": 1,
+  "api_version": "3.0",
+  "options": {
+    "delay": 0,
+    "hide_fixed_elements": true,
+    "use_basic_auth": true,
+    "basic_username": "user",
+    "basic_password": "pass",
+    "use_login_profile": true,
+    "use_selenium_script": false,
+    "login_profile": {
+      "login_url": "https://app.repro.io/suppliers/sign_in",
+      "username_locator": "id=supplier_email",
+      "username_value": "user@example.com",
+      "password_locator": "id= supplier_password",
+      "password_value": "password",
+      "submit_locator": "//input[@type='submit']",
+      "date_added": "2017-03-16T11:48:17.000Z",
+      "date_updated": "2017-06-21T10:18:14.000Z",
+      "profile_name": "profile_name"
+    },
+    "selenium_script": null,
+    "send_email": false,
+    "email_list": "",
+    "send_to_applitools": false
+  },
+  "versions": [
+    {
+      "rating": null,
+      "feedback": null,
+      "comparison_rating": null,
+      "comparison_feedback": null,
+      "applitools_batch_id": null,
+      "version_id": 2579113,
+      "start_date": "2017-09-04T04:37:46.000Z",
+      "version_hash": "z165f1fe1f320db055a7",
+      "description": null,
+      "tags": [],
+      "result_count": {
+        "total": 1,
+        "running": 0,
+        "successful": 1,
+        "failed": 0,
+        "cancelled": 0
+      },
+      "active": true,
+      "_web_url": "https://app.crossbrowsertesting.com/screenshots/2452013/2579113",
+      "_public_url": "https://app.crossbrowsertesting.com/public/i97e01ff25415a05/screenshots/z165f1fe1f320db055a7",
+      "show_comparisons_web_url": "https://crossbrowsertesting.com/users/screenshots/2452013/2579113/comparison",
+      "show_comparisons_public_url": "https://crossbrowsertesting.com/users/public/i97e01ff25415a05/screenshots/z165f1fe1f320db055a7/comparison",
+      "download_results_zip_url": "https://app.crossbrowsertesting.com/api/v3/screenshots/2452013/2579113/zip",
+      "download_results_zip_public_url": "https://app.crossbrowsertesting.com/api/v3/public/i97e01ff25415a05/screenshots/z165f1fe1f320db055a7/zip",
+      "results": [
+        {
+          "finish_date": "2017-09-04T04:39:03.000Z",
+          "flagged": 0,
+          "flagged_reason": null,
+          "flagged_details": null,
+          "result_hash": "z2309298c07a955177eb",
+          "captured_dom": true,
+          "applitools_session_id": null,
+          "description": null,
+          "tags": [],
+          "state": "complete",
+          "successful": true,
+          "resolution": {
+            "width": 1280,
+            "height": 1024,
+            "desktop_width": 1280,
+            "desktop_height": 1024,
+            "name": "1280x1024",
+            "requested_name": "1280x1024"
+          },
+          "result_id": 1111111,
+          "initialized_date": "2017-09-04T04:37:47.000Z",
+          "start_date": "2017-09-04T04:38:13.000Z",
+          "os": {
+            "name": "Mac OSX 10.11",
+            "type": "Mac",
+            "version": "Mac OSX 10.11",
+            "api_name": "Mac10.11",
+            "device": "desktop",
+            "device_type": null,
+            "icon_class": "mac",
+            "configuration_sort_order": 4.6,
+            "requested_api_name": "Mac10.11"
+          },
+          "browser": {
+            "name": "Google Chrome 56 (64-bit)",
+            "type": "Chrome",
+            "version": "56",
+            "api_name": "Chrome56x64",
+            "icon_class": "chrome",
+            "requested_api_name": "Chrome56x64"
+          },
+          "images": {
+            "hash": "z4a907f88fc48389fb16",
+            "windowed": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/window/z4a907f88fc48389fb16.png",
+            "chromeless": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/chromeless/z4a907f88fc48389fb16.png",
+            "fullpage": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/full/z4a907f88fc48389fb16.png"
+          },
+          "thumbs": {
+            "hash": "z4a907f88fc48389fb16",
+            "windowed": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/window/thumbs/z4a907f88fc48389fb16.png",
+            "chromeless": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/chromeless/thumbs/z4a907f88fc48389fb16.png",
+            "fullpage": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/full/thumbs/z4a907f88fc48389fb16.png"
+          },
+          "launch_live_test_url": "https://app.crossbrowsertesting.com/livetests/run?browser=Mac10.11|Chrome56x64|1280x1024&url=https%3A//app.repro.io/apps/1234567/start_guide&launch=true",
+          "page_source": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/html/z2309298c07a955177eb.html",
+          "dom_source": "https://s3.amazonaws.com/media.crossbrowsertesting.com/users/318809/screenshots/dom/z2309298c07a955177eb.json",
+          "show_result_web_url": "https://app.crossbrowsertesting.com/screenshots/2452013/2579113/13217624",
+          "show_result_public_url": "https://app.crossbrowsertesting.com/public/i97e01ff25415a05/screenshots/z165f1fe1f320db055a7/z4a907f88fc48389fb16"
+        }
+      ]
+    }
+  ]
+}
