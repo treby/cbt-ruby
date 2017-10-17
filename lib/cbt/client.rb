@@ -22,7 +22,7 @@ module Cbt
           interval: RETRY_INTERVAL,
           # Considering exceptions `:raise_error` (raises Faraday::ClientError)
           exceptions: [Faraday::ClientError],
-          retry_if: -> (_, e) { e.response[:status] >= 500 }
+          retry_if: -> (_, e) { e.response.nil? || e.response[:status] >= 500 }
         faraday.response :raise_error
         faraday.response :json, content_type: 'application/json'
         faraday.adapter Faraday.default_adapter
